@@ -32,7 +32,8 @@ const axiosInstance = axios.create({
 });
 */
 const axiosInstance = axios.create({
-  baseURL: (import.meta.env.VITE_API_BASE_URL ?? "").trim(),
+ // baseURL: (import.meta.env.VITE_API_BASE_URL ?? "").trim(),//used for local host
+  baseURL: (import.meta.env.VITE_API_BASE_URL ?? "https://zero203-3070.onrender.com").trim(),
   headers: { "Content-Type": "application/json" },
   timeout: 15_000,
 });
